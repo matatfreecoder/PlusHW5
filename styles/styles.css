@@ -1,0 +1,93 @@
+body {
+	/*background: #eef2e2;*/
+	font-family: "Roboto", sans-serif;
+}
+
+input {
+	margin-top: 15px;
+}
+
+button {
+	width: 100%;
+}
+
+hr {
+	height: 2px;
+	border: none;
+	color: #247291;
+	background-color: #247291;
+}
+
+a {
+	text-decoration: none;
+}
+.btn {
+	background: #ffc93c;
+	border: 1px solid #f9b814;
+
+	/*	font-weight: bold;*/
+	font-size: 1.3em;
+	padding: 0 12px;
+}
+
+.form-control {
+	font-size: 1.3em;
+	padding: 0 12px;
+}
+
+.btn:hover {
+	background: #f9b814;
+	border: 1px solid #f9b814;
+}
+
+.fa-location-pin {
+	color: #247291;
+	font-size: 2em;
+}
+
+.fa-location-pin:hover {
+	color: #155263;
+	cursor: pointer;
+}
+
+.main-frame {
+	border: solid 2px #f8da5b;
+	margin-top: 10px;
+	width: 600px;
+	border-radius: 10px;
+	padding: 5px 15px;
+	/*   background: #f5f9ee;  */
+}
+
+.city,
+.temperature {
+	padding-left: 12px;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.img-main {
+	display: block;
+	margin: 0 auto;
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.temp-day {
+	padding-left: 24px;
+	font-size: 1.2em;
+}
+
+.img-day {
+	display: block;
+	max-width: 50%;
+	max-height: 50%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.units {
+	position: relative;
+	top: -16px;
+	font-size: 14px;
+}

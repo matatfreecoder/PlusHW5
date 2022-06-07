@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/b0cfff2e4c.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<title>Weather App</title>
+	</head>
+	<body>
+		<div class="container main-frame">
+			<!-- form for input city or geolocation -->
+			<form id="search-form">
+				<div class="row align-items-center">
+					<div class="col-8">
+						<div class="mb-3">
+							<input
+								type="text"
+								class="form-control"
+								id="inputCityName"
+								placeholder="Enter a city"
+							/>
+						</div>
+					</div>
+					<div class="col-3">
+						<button type="submit" class="btn btn-primary">Search</button>
+					</div>
+					<div class="col-1">
+						<i
+							class="fa-solid fa-location-pin"
+							id="current-location"
+							title="Current location weather"
+						></i>
+					</div>
+				</div>
+			</form>
+
+			<!-- output data for city -->
+			<div class="row align-items-center">
+				<div class="col-5">
+					<div class="city" id="city">Kyiv, Ukraine</div>
+					<div class="temperature">
+						<span id="today-temperature">20</span>
+						<span class="units">
+							<a href="#" id="celsius">C</a> |
+							<a href="#" id="fahrenheit">F</a>
+						</span>
+					</div>
+				</div>
+				<div class="col-3">
+					<img src="src/sun.png" alt="" class="img-main" />
+				</div>
+				<div class="col-4">
+					<div class="date">19.05.2022 15:20</div>
+					<div class="sky" id="sky">clear</div>
+					<div class="wind" id="wind">wind 20m/c</div>
+					<div class="humidity" id="humidity">humidity 50%</div>
+				</div>
+			</div>
+			<hr />
+
+			<!-- +1 day data -->
+			<div class="row align-items-center">
+				<div class="col-3 temp-day">10 C</div>
+				<div class="col-2" id="first-day">day</div>
+				<div class="col-3">
+					<img src="src/sun.png" alt="" class="img-day" />
+				</div>
+				<div class="col-4">clear</div>
+			</div>
+
+			<!-- +2 day data -->
+			<div class="row align-items-center">
+				<div class="col-3 temp-day">20 C</div>
+				<div class="col-2" id="second-day">day</div>
+				<div class="col-3">
+					<img src="src/rain.png" alt="" class="img-day" />
+				</div>
+				<div class="col-4">clear</div>
+			</div>
+			<!-- +3 day data -->
+			<div class="row align-items-center">
+				<div class="col-3 temp-day">30 C</div>
+				<div class="col-2" id="third-day">day</div>
+				<div class="col-3">
+					<img src="src/rain_sun.png" alt="" class="img-day" />
+				</div>
+				<div class="col-4">cloudly</div>
+			</div>
+			<!-- +4 day data -->
+			<div class="row align-items-center">
+				<div class="col-3 temp-day">40 C</div>
+				<div class="col-2" id="fourth-day">day</div>
+				<div class="col-3">
+					<img src="src/storm.png" alt="" class="img-day" />
+				</div>
+				<div class="col-4">clear</div>
+			</div>
+			<!-- +5 day data -->
+			<div class="row align-items-center">
+				<div class="col-3 temp-day">30 C</div>
+				<div class="col-2" id="fifth-day">day</div>
+				<div class="col-3">
+					<img src="src/hot.png" alt="" class="img-day" />
+				</div>
+				<div class="col-4">clear</div>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>
+
+<!--- https://codesandbox.io/s/weather-html-wufd09?file=/index.html -->
